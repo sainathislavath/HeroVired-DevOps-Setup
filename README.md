@@ -42,26 +42,19 @@ Use ls to view them and cat <filename> to verify the content.
 
 ---
 
-### 1. System Monitoring with htop
-
 ![System Monitoring](./Task1/images/1.png)
 
-### 2. Disk Usage with df
 
 ![Disk Usage](./Task1/images/2.png)
 
-### 3. Directory Space with du
 
 ![Directory Usage](./Task1/images/3.png)
 
-### 4. Top Memory-Consuming Processes
 
 ![Top Memory](./Task1/images/4.png)
 
-### 5. Top CPU-Consuming Processes
 
 ![Top CPU](./Task1/images/5.png)
 
-### 6. Log Files in /system_log
 
 ![Log Files](./Task1/images/6.png)
