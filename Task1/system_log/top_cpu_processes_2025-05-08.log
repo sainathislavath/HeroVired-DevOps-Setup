@@ -1,0 +1,10 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+sainath     2535  0.1  0.2 474140 16252 ?        Ssl  00:19   0:00 /usr/libexec/xdg-desktop-portal
+root           1  0.1  0.1  21844 13044 ?        Ss   May07   0:03 /sbin/init
+root         266  0.0  0.3 112796 24196 ?        Ssl  May07   0:01 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+systemd+     119  0.0  0.1  21452 11924 ?        Ss   May07   0:01 /usr/lib/systemd/systemd-resolved
+root         201  0.0  0.2 1829828 16368 ?       Ssl  May07   0:01 /usr/libexec/wsl-pro-service -vv
+root         198  0.0  0.1  17976  8228 ?        Ss   May07   0:01 /usr/lib/systemd/systemd-logind
+root          95  0.0  0.0  23972  5972 ?        Ss   May07   0:01 /usr/lib/systemd/systemd-udevd
+systemd+     121  0.0  0.0  91020  6488 ?        Ssl  May07   0:00 /usr/lib/systemd/systemd-timesyncd
+root          53  0.0  0.2  66832 19984 ?        S<s  May07   0:00 /usr/lib/systemd/systemd-journald

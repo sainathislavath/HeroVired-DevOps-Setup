@@ -1,0 +1,54 @@
+top - 00:19:36 up 56 min,  1 user,  load average: 0.05, 0.02, 0.00
+Tasks:  47 total,   1 running,  46 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.0 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7781.2 total,   7077.7 free,    669.1 used,    266.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7112.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   21844  13044   9612 S   0.0   0.2   0:03.60 systemd
+      2 root      20   0    2776   1920   1796 S   0.0   0.0   0:00.03 init-sy+
+      8 root      20   0    2776    132    132 S   0.0   0.0   0:00.00 init
+     53 root      19  -1   66832  19976  18808 S   0.0   0.3   0:00.92 systemd+
+     95 root      20   0   23972   5972   4832 S   0.0   0.1   0:01.01 systemd+
+    119 systemd+  20   0   21452  11924   9732 S   0.0   0.1   0:01.35 systemd+
+    121 systemd+  20   0   91020   6488   5640 S   0.0   0.1   0:00.98 systemd+
+    168 root      20   0    4236   2564   2316 S   0.0   0.0   0:00.06 cron
+    169 message+  20   0    9680   5216   4476 S   0.0   0.1   0:00.66 dbus-da+
+    198 root      20   0   17976   8228   7204 S   0.0   0.1   0:01.09 systemd+
+    201 root      20   0 1829828  16368   9800 S   0.0   0.2   0:01.26 wsl-pro+
+    221 root      20   0    3160   1140   1052 S   0.0   0.0   0:00.06 agetty
+    222 root      20   0   11156   1000      0 S   0.0   0.0   0:00.03 nginx
+    224 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    225 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.03 nginx
+    226 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    227 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    228 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    229 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.02 nginx
+    230 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    231 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.02 nginx
+    232 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    233 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.02 nginx
+    234 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    235 www-data  20   0   12840   4240   2952 S   0.0   0.1   0:00.01 nginx
+    241 syslog    20   0  222508   9380   4500 S   0.0   0.1   0:00.74 rsyslogd
+    250 root      20   0    3116   1108   1020 S   0.0   0.0   0:00.09 agetty
+    266 root      20   0  112796  24196  14380 S   0.0   0.3   0:01.55 unatten+
+    366 root      20   0    2784    204     80 S   0.0   0.0   0:00.00 Session+
+    367 root      20   0    2784    208     80 S   0.0   0.0   0:00.36 Relay(3+
+    368 sainath   20   0    6304   5580   3628 S   0.0   0.1   0:00.48 bash
+    369 root      20   0    6688   4656   3876 S   0.0   0.1   0:00.00 login
+    457 sainath   20   0   20272  11432   9340 S   0.0   0.1   0:00.33 systemd
+    459 sainath   20   0   21148   1728      0 S   0.0   0.0   0:00.00 (sd-pam)
+    474 sainath   20   0    6072   5232   3576 S   0.0   0.1   0:00.00 bash
+    795 polkitd   20   0  308164   9188   6492 S   0.0   0.1   0:00.16 polkitd
+   1939 sainath   20   0    9424   4548   4152 S   0.0   0.1   0:00.06 dbus-da+
+   1945 sainath   20   0  382828   7532   6908 S   0.0   0.1   0:00.00 at-spi-+
+   1952 sainath   20   0    9292   4640   4244 S   0.0   0.1   0:00.00 dbus-da+
+   1958 sainath   20   0  605132   8788   6140 S   0.0   0.1   0:00.02 xdg-doc+
+   1962 sainath   20   0  304148   4952   4588 S   0.0   0.1   0:00.00 xdg-per+
+   1969 root      20   0    2704   1100   1012 S   0.0   0.0   0:00.00 fusermo+
+   1984 sainath   20   0  236068   7440   6744 S   0.0   0.1   0:00.01 at-spi2+
+   1992 sainath   20   0  230108   7324   4896 S   0.0   0.1   0:00.01 dconf-s+
+   2535 sainath   20   0  474140  16252  12008 S   0.0   0.2   0:00.04 xdg-des+
+   2551 sainath   20   0    4752   3420   3144 S   0.0   0.0   0:00.00 monitor+
+   2556 sainath   20   0    9284   4952   3060 R   0.0   0.1   0:00.00 top
