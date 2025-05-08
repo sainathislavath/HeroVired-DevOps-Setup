@@ -31,6 +31,8 @@ Ensure logs are saved for capacity planning and performance monitoring.
 ├── top_mem_processes_YYYY-MM-DD.log
 └── top_cpu_processes_YYYY-MM-DD.log
 
+```
+
 ## Output
 
 Run the script with: `./monitor.sh`
