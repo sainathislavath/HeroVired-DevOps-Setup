@@ -165,7 +165,7 @@ drwx------ 2 mike  mike  4096 May 8 10:15 /home/mike/workspace
 ![Secured workspace](./Task2/images/2.png)
 
 
-![Password Complexity](./Task3/images/3.png)
+![Password Complexity](./Task2/images/3.png)
 
 
-![Successful completion](./Task4/images/4.png)
+![Successful completion](./Task2/images/4.png)
