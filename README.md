@@ -59,6 +59,7 @@ Use ls to view them and cat <filename> to verify the content.
 
 ![Log Files](./Task1/images/6.png)
 
+---
 
 # Task 2: User Management and Access Control
 
@@ -169,3 +170,123 @@ drwx------ 2 mike  mike  4096 May 8 10:15 /home/mike/workspace
 
 
 ![Successful completion](./Task2/images/4.png)
+
+---
+
+# Task 3: Backup Configuration for Web Servers
+
+---
+
+## Objective
+
+Automate backup procedures for two web servers:
+
+- **Sarah's Apache server**
+- **Mike's Nginx server**
+
+The backups should:
+
+- Include server configurations and document root
+- Be saved in `/backups/` directory
+- Run automatically **every Tuesday at 12:00 AM**
+- Include **compressed backup files** and **verification logs**
+
+---
+
+## Backup Targets
+
+| User   | Configuration Path         | Document Root              |
+|--------|----------------------------|----------------------------|
+| Sarah  | `/etc/apache2/`            | `/var/www/html/`           |
+| Mike   | `/etc/nginx/`              | `/usr/share/nginx/html/`   |
+
+---
+
+## Backup Output
+
+- Backup files:
+```bash
+/backups/apache_backup_YYYY-MM-DD.tar.gz
+/backups/nginx_backup_YYYY-MM-DD.tar.gz
+```
+
+- Verification logs:
+```bash
+/backups/apache_verify_YYYY-MM-DD.log
+/backups/nginx_verify_YYYY-MM-DD.log
+```
+
+---
+
+## Steps Performed by Script
+
+### 1. Created `/backups/` directory with proper permissions:
+```bash
+sudo mkdir -p /backups
+sudo chmod 775 /backups
+sudo chown root:root /backups
+```
+
+### 2. Created Backup Scripts
+   - `/home/sarah/apache_backup.sh`
+   - `/home/mike/nginx_backup.sh`
+
+Each script performs:
+```bash
+sudo tar -czf /backups/backup.tar.gz /target/paths
+sudo bash -c "tar -tzf /backups/backup.tar.gz > /backups/verify.log"
+```
+
+### 3. Scheduled Cron Jobs
+Cron entries for each user:
+```bash
+0 0 * * 2 /home/sarah/apache_backup.sh
+0 0 * * 2 /home/mike/nginx_backup.sh
+```
+These run every Tuesday at 12:00 AM.
+
+### 4. Configured Minimal Sudo Permissions
+Created secure sudoers files:
+```bash
+/etc/sudoers.d/sarah-tar
+/etc/sudoers.d/mike-tar
+```
+
+With this content:
+```bash
+sarah ALL=(ALL) NOPASSWD: /bin/tar, /usr/bin/bash
+mike  ALL=(ALL) NOPASSWD: /bin/tar, /usr/bin/bash
+```
+
+This allows each user to only run `tar` and `bash` (used for redirection) with `sudo`.
+
+---
+
+## Manual Test Output
+After running the final script:
+```bash
+sudo -u sarah /home/sarah/apache_backup.sh
+sudo -u mike /home/mike/nginx_backup.sh
+```
+
+You should see:
+```bash
+Apache backup complete: /backups/apache_backup_YYYY-MM-DD.tar.gz
+Nginx backup complete: /backups/nginx_backup_YYYY-MM-DD.tar.gz
+```
+
+---
+
+![Backup Configuration](./Task3/images/1.png)
+
+
+![cron job](./Task3/images/2.png)
+
+
+![Backup Scripts](./Task3/images/3.png)
+
+
+![Permissions](./Task3/images/4.png)
+
+
+![Successful completion](./Task3/images/5.png)
